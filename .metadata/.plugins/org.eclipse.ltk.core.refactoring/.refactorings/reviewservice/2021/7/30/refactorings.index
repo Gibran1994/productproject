@@ -1,0 +1,6 @@
+1626690891829	Rename type 'ReviewsModel'
+1626694051839	Delete element
+1626694137616	Delete element
+1626695286293	Encapsulate field 'reviewsList'
+1626695418076	Encapsulate field 'totalReviews'
+1626719310516	Move compilation unit

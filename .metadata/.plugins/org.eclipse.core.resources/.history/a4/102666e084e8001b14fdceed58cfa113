@@ -1,0 +1,39 @@
+package com.gibran.reviewservice.service;
+
+import java.util.Optional;
+import java.util.function.Function;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.gibran.reviewservice.model.ProductReviewsModel;
+import com.gibran.reviewservice.pojo.CreateReviewPojo;
+import com.gibran.reviewservice.repository.ReviewsRepository;
+import com.gibran.reviewservice.util.GenerateCommonResponse;
+
+@Service
+public class ReviewService {
+
+	@Autowired
+	ReviewsRepository reviewRepository;
+	
+	Function<String, Optional<ProductReviewsModel>> getProductReviewsFunction = (productId) -> 
+		 reviewRepository.fetchByProduct(productId);
+
+	public ResponseEntity<Object> getReviews(String productId) {
+		Optional<ProductReviewsModel> productReviewsOptional = getProductReviewsFunction.apply(productId);
+		
+		return productReviewsOptional.isPresent()?
+				GenerateCommonResponse.generateResponseEntityBiFunction.apply(productReviewsOptional.get(),HttpStatus.OK)
+				:GenerateCommonResponse.generateCommonResponseObjectBiFunction.apply("421","No Reviews Found");		
+	}
+	
+	public ResponseEntity<Object> createReview(String userId, CreateReviewPojo createReviewRequest){
+		
+		
+		
+		return null;
+	}
+}

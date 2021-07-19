@@ -1,0 +1,9 @@
+package com.gibran.productservice.util;
+
+public class ProductDetailsUtil {
+
+	public Object getProductDetails(String productId) {
+		
+		return null;
+	}
+}

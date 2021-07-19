@@ -1,0 +1,5 @@
+package com.gibran.reviewservice.controller;
+
+public class ReviewController {
+
+}

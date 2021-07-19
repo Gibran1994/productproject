@@ -1,0 +1,11 @@
+package com.gibran.reviewservice.util;
+
+public class TokenUtil {
+
+	private String verifyToken(String accessToken) {
+		//Verify Token Here
+		String userId = ""; //UserID fetched after verifying token
+		
+		return userId;
+	}
+}

@@ -1,0 +1,7 @@
+[{
+  "_id": {
+    "$oid": "60f5cd857af9526e472529c4"
+  },
+  "tenantId": "products",
+  "tenantKey": "abc123"
+}]

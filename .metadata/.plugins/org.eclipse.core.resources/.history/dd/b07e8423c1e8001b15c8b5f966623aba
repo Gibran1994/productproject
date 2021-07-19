@@ -1,0 +1,17 @@
+package com.gibran.productservice.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+	@Autowired
+	RestTemplate restTemplate;
+
+@Service
+public class ProductDetailsUrlService {
+
+	public Object getProductDetails(String productId) {
+		
+		return null;
+	}
+}

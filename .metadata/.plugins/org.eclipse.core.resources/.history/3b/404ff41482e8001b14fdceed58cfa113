@@ -1,0 +1,36 @@
+package com.gibran.reviewservice.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.gibran.reviewservice.pojo.CreateReviewPojo;
+import com.gibran.reviewservice.service.ReviewService;
+
+@RestController
+@RequestMapping(path = "review")
+public class ReviewController {
+	
+	@Autowired
+	private ReviewService reviewService;
+
+	@GetMapping("{product_id}")
+	public ResponseEntity<Object> getReview(@PathVariable(name = "product_id", required = true) String productId){
+		
+		return reviewService.getReviews(productId);
+	}
+	
+	@PostMapping
+	public ResponseEntity<Object> createReview(@RequestParam(name = "access-token") String accessToken,
+											   @RequestBody CreateReviewPojo createReviewRequest){
+		
+		return null;
+	}
+	
+}

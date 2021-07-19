@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="org.springframework.data.mongodb.repository.Query"/>
+<fullyQualifiedTypeName name="com.gibran.reviewservice.model.ReviewsModel"/>
+<fullyQualifiedTypeName name="com.gibran.reviewservice.repository.ReviewsRepository"/>
+<fullyQualifiedTypeName name="java.util.function.Function"/>
+<fullyQualifiedTypeName name="java.util.Optional"/>
+<fullyQualifiedTypeName name="com.gibran.reviewservice.model.ProductReviewsModel"/>
+<fullyQualifiedTypeName name="com.gibran.reviewservice.pojo.ResponsePojo"/>
+<fullyQualifiedTypeName name="java.util.function.BiFunction"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+<fullyQualifiedTypeName name="com.gibran.reviewservice.service.ReviewService"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+<fullyQualifiedTypeName name="com.gibran.reviewservice.util.TokenUtil"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.data.mongodb.core.mapping.Document"/>
+<fullyQualifiedTypeName name="org.springframework.data.annotation.Id"/>
+<fullyQualifiedTypeName name="org.springframework.data.mongodb.repository.MongoRepository"/>
+<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+<fullyQualifiedTypeName name="com.gibran.reviewservice.pojo.CreateReviewPojo"/>
+<fullyQualifiedTypeName name="com.gibran.reviewservice.repository.TenantRepository"/>
+<fullyQualifiedTypeName name="com.gibran.reviewservice.model.TenantDetailsModel"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.gibran.reviewservice.util.AuthServiceProvider"/>
+<fullyQualifiedTypeName name="com.gibran.reviewservice.util.GenerateCommonResponse"/>
+<fullyQualifiedTypeName name="com.gibran.reviewservice.exceptions.TokenExpiredException"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="com.gibran.reviewservice.model.submodel.ReviewsSubModel"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

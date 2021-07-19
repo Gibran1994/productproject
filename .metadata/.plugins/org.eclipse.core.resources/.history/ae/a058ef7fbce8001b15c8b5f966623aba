@@ -1,0 +1,5 @@
+package com.gibran.productservice.controller;
+
+public class ProductController {
+
+}

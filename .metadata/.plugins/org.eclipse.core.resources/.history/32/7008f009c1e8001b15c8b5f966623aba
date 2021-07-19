@@ -1,0 +1,5 @@
+package com.gibran.productservice.exception;
+
+public class CommonExceptionController {
+
+}

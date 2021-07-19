@@ -1,0 +1,18 @@
+package com.gibran.reviewservice.util;
+
+import java.util.function.BiFunction;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+import com.gibran.reviewservice.pojo.ResponsePojo;
+
+public class GenerateCommonResponse {
+
+	public static BiFunction<String, String, ResponsePojo> generateCommonResponseObjectBiFunctio  = 
+			(responseCode, responseMessage) -> new ResponsePojo(responseCode, responseMessage);
+			
+
+	public static BiFunction<Object, HttpStatus, ResponseEntity<Object>> generateResponseEntityBiFunction = 
+			(response, httpStatus) -> new ResponseEntity<Object>(response, httpStatus);
+}

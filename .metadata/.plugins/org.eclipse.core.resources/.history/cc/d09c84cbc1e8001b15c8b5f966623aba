@@ -1,0 +1,13 @@
+package com.gibran.productservice.service;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ProductService {
+
+	public ResponseEntity<Object> getProductDetailsService(String productId){
+		
+		return null;
+	}
+}

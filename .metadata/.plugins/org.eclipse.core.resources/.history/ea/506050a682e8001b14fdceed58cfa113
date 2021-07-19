@@ -1,0 +1,5 @@
+package com.gibran.reviewservice.service;
+
+public class TenantService {
+
+}

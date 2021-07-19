@@ -1,0 +1,5 @@
+package com.gibran.productservice.util;
+
+public class ProductDetailsUtil {
+
+}

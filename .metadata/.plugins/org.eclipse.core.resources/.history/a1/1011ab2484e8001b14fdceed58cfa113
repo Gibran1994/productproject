@@ -1,0 +1,26 @@
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+
+
+import com.uni.scrapwagon.util.GenerateCommonResponse;
+
+
+
+@ControllerAdvice
+public class TokenExceptionController {
+
+
+
+@ExceptionHandler(value = TokenExpiredException.class)
+public ResponseEntity<Object> exception(TokenExpiredException exception) {
+
+return GenerateCommonResponse.generateResponseEntityBiFunction.apply(
+GenerateCommonResponse.generateCommonResponseObjectBifunction.apply("401", "Invalid Token"), HttpStatus.OK);
+}
+
+
+
+}

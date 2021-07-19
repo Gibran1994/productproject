@@ -1,0 +1,14 @@
+package com.gibran.reviewservice.model;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "product_reviews")
+public class ReviewsModel {
+	
+	@Id
+	private String id;
+	private String productId;
+	private String productName;
+	
+}

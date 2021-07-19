@@ -1,0 +1,5 @@
+package com.gibran.reviewservice.pojo;
+
+public class CreateReviewPojo {
+
+}

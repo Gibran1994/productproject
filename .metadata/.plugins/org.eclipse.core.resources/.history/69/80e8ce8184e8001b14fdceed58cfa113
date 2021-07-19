@@ -1,0 +1,18 @@
+package com.gibran.reviewservice.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.gibran.reviewservice.model.TenantDetailsModel;
+import com.gibran.reviewservice.repository.TenantRepository;
+
+@Service
+public class TenantService {
+	
+	@Autowired
+	private TenantRepository tenantRepository;
+
+	public TenantDetailsModel getTenantDetails() {
+		return tenantRepository.findAll().get(0);
+	}
+}
